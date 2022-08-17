@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.sin_up{
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_container{
+  width: 50%;
+  height: 65vh;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 80px;
+}
+@media(max-width:782px){
+  .main_container{
+    width: 80%;
+    height: 65vh;
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 80px;
+  }
+
+}
+
+.mysearch{
+  display: flex;
+}
+
+.card-img-top{
+ 
+  height: 18rem;
+  width: 10rem;
+
+
+  
+}
+.card:hover{
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 gray;
+  
+
+}
+.logout_btn{
+  height: 30px;
+  border-radius: 10px;
+  width: 80px;
+  border: none;
+  margin-right: 120px;
+  margin-top: 15px;
+  float: right;
+}
+.menu{
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 60px;
+}
+.menu li{
+  float: left;
+}
+.menu li a{
+  color: white;
+  text-decoration: none;
+  width: 130px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+
+
+  
+}
+.search_form{
+
+  width: 300px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  
+ 
+}
+.search_form input{
+  border: 1px solid black;
+}
+
+@media(max-width:910px){
+  .menu li a{
+    
+    width: 80px;
+   
+    font-size: 15px;
+  }
+  .logout_btn{
+    
+    border: none;
+    margin-right: 5px;
+    
+  }
+  
+}
+@media(max-width:372px){
+  .menu li a{
+    
+    width: 60px;
+   
+    font-size: 13px;
+  }
+  .logout_btn{
+    
+    width: 70px;
+    
+  }
+
+}
+@media(max-width:330px){
+  .search_form{
+
+    width: 250px;
+
+    
+   
+  }
+
 }
